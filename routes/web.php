@@ -16,4 +16,4 @@ Route::get('/', function () {
 });
 
 Route::post('create', 'MainController@create')->name('create');
-Route::get('/{slug}', 'MainController@show')->name('show');
+Route::get('/{slug}', 'MainController@redirect')->name('redirect');
