@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('create', 'MainController@index')->name('create');
+Route::post('create', 'MainController@create')->name('create');
+Route::get('/{slug}', 'MainController@show')->name('show');
